@@ -1,0 +1,28 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  transition: 2s;
+}
+input:focus {
+  outline: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes loginanimation {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50px);
+  }
+}
+
+.animate {
+  animation: loginanimation 0.5s linear;
+}
